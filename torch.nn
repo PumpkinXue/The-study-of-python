@@ -1,9 +1,25 @@
 torch.nn.Conv2d(in_channels,out_channels,kernel_size,stride=1,padding=0,dilation=1,groups=1,bias=True,padding_mode='Zero')
-##用来实现2d卷积操作
+
+##
+用来实现2d卷积操作
 ##in_channels —— 输入的channels数
 out_channels —— 输出的channels数
 kernel_size ——卷积核的尺寸，可以是方形卷积核、也可以不是，下边example可以看到
 stride —— 步长，用来控制卷积核移动间隔
 padding ——输入边沿扩边操作
 padding_mode ——扩边的方式
-bias ——是否使用偏置(即out = wx+b中的b)##
+bias ——是否使用偏置(即out = wx+b中的b)
+dilation —— 这个参数简单说，设定了取数之间的间隔
+##
+
+torch.nn.MaxPool2d()
+
+##
+2d池化运算
+kernel_size ：表示做最大池化的窗口大小，可以是单个值，也可以是tuple元组
+stride ：步长，可以是单个值，也可以是tuple元组
+padding ：填充，可以是单个值，也可以是tuple元组
+dilation ：控制窗口中元素步幅
+return_indices ：布尔类型，返回最大值位置索引
+ceil_mode ：布尔类型，为True，用向上取整的方法，计算输出形状；默认是向下取整。
+##
