@@ -1,0 +1,9 @@
+torch.nn.Conv2d(in_channels,out_channels,kernel_size,stride=1,padding=0,dilation=1,groups=1,bias=True,padding_mode='Zero')
+##用来实现2d卷积操作
+##in_channels —— 输入的channels数
+out_channels —— 输出的channels数
+kernel_size ——卷积核的尺寸，可以是方形卷积核、也可以不是，下边example可以看到
+stride —— 步长，用来控制卷积核移动间隔
+padding ——输入边沿扩边操作
+padding_mode ——扩边的方式
+bias ——是否使用偏置(即out = wx+b中的b)##
