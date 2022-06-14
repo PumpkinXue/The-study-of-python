@@ -23,3 +23,20 @@ dilation ：控制窗口中元素步幅
 return_indices ：布尔类型，返回最大值位置索引
 ceil_mode ：布尔类型，为True，用向上取整的方法，计算输出形状；默认是向下取整。
 ##
+
+torch.nn.Linear(in_features,out_features,bias=True)
+
+##
+in_features:输入的个数
+out_features:输出的个数
+bias:偏置
+即为该式：Yj=Wij*Xi+b
+##
+
+torch.nn.functional.dropout(input,p=0.5,training=False,inplace=False)
+
+##
+以p的概率使一些神经元的输出为0，减少神经元间的相关性来防止过拟合
+使用时应需要设置它的training状态参数与模型整体的一致
+即training=self.training
+##
